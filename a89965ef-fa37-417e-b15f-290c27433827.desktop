@@ -1,0 +1,20 @@
+[Desktop Entry]
+Type=Action
+Name[en_US]=Mount ISO
+Name[en]=Mount ISO
+Name[C]=Mount ISO
+Icon[en_US]=/usr/local/share/icons/iso.png
+Icon[en]=/usr/local/share/icons/iso.png
+Icon[C]=/usr/local/share/icons/iso.png
+ToolbarLabel[en_US]=Mount ISO
+ToolbarLabel[en]=Mount ISO
+ToolbarLabel[C]=Mount ISO
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Name[en_US]=MountISO
+Name[en]=MountISO
+Name[C]=MountISO
+Exec=/usr/bin/udisksctl loop-setup --file %f --read-only --no-user-interaction
+MimeTypes=application/x-iso9660-image;
+SelectionCount==1
